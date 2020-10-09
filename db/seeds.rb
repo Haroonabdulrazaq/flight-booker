@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require_relative 'airports'
+
+
+AIPORTS.each do |aiport|
+
+    Airport.create(
+        name: aiport['name'],
+        code: airpot['code'],
+        country: aiport['country'],
+        city: aiport['city']
+    )
+
+end
